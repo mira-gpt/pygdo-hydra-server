@@ -6,7 +6,7 @@ from gdo.hydra_server.module_hydra_server import module_hydra_server
 from gdo.mail.Mail import Mail
 
 
-class monitor_cronjob(MethodCronjob):
+class cronjob(MethodCronjob):
     """Alert monitor contacts once when a monitor stops reporting."""
 
     def gdo_execute(self) -> GDT:
