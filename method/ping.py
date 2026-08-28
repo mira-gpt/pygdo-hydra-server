@@ -14,7 +14,7 @@ class ping(Method):
 
     @classmethod
     def gdo_trigger(cls) -> str:
-        return 'hydra.ping'
+        return ''
 
     def gdo_in_channels(self) -> bool:
         return False

@@ -15,7 +15,7 @@ class acquire(Method):
 
     @classmethod
     def gdo_trigger(cls) -> str:
-        return 'hydra_server.acquire'
+        return ''
 
     def gdo_in_channels(self) -> bool:
         return False

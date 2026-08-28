@@ -9,6 +9,10 @@ from gdo.mail.Mail import Mail
 class cronjob(MethodCronjob):
     """Alert monitor contacts once when a monitor stops reporting."""
 
+    @classmethod
+    def gdo_trigger(cls) -> str:
+        return ''
+
     def gdo_execute(self) -> GDT:
         threshold = module_hydra_server.instance().cfg_monitor_down_after()
         notified = 0

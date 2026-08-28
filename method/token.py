@@ -11,7 +11,7 @@ class token(MethodForm):
 
     @classmethod
     def gdo_trigger(cls) -> str:
-        return 'hydra.token'
+        return ''
 
     def gdo_needs_authentication(self) -> bool:
         return False

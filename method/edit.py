@@ -11,6 +11,10 @@ from gdo.core.GDT_Container import GDT_Container
 class edit(MethodForm):
     """Edit the monitor selected by the preceding token login."""
 
+    @classmethod
+    def gdo_trigger(cls) -> str:
+        return ''
+
     def gdo_needs_authentication(self) -> bool:
         return False
 
